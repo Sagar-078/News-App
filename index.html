@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <div class="contaner">
+
+            <div class="navBar">
+
+                <a href="#" onclick="reload()" class="logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS175eLsxjuNl_B5TXNKJr_Omgm8ub_Romwvw&usqp=CAU"></a>
+
+                <div class="list_contaner">
+
+                    <ul>
+                        <li href="#" class="link" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                        <li href="#" class="link" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                        <li href="#" class="link" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                        <li href="#" class="link" id="technology" onclick="onNavItemClick('technology')">Technology</li>
+                    </ul>
+
+                </div>
+
+                <div class="search_contaner">
+                    <input id="newsInput" type="text" placeholder="seach News.."> 
+                    <button id="searchBtn">Search</button>
+                </div>
+
+            </div>
+
+            <main>
+                <div class="cards-contaner" id="card-contaner">
+                    
+                </div>
+            </main>
+
+            <template id="template-newsCard" >
+                <div class="card">
+                    <div class="card-header">
+                        <img src="https://via.placeholder.com/400x200" alt="" id="news-Image">
+                    </div>
+                    <div class="card-content">
+                        <h3 id="newsTitle">This is the title</h3>
+                        <h6 class="news-sorc" id="newsSorc">End Gadget 26/08/2023</h6>
+                        <p class="news-Desc" id="newsDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem unde natus tenetur totam at praesentium possimus, ea voluptates facere. Mollitia.</p>
+                    </div>
+                </div>
+            </template>
+
+
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
